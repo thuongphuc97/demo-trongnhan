@@ -19,6 +19,9 @@ const items = [
     'Phụ kiện tiện ích',
     'Chăm sóc xe',
 ];
+const handleClickCartBtn = () => {
+    alert('Mở giỏ hàng');
+};
 
 const Header = () => {
     return (
@@ -43,7 +46,12 @@ const Header = () => {
                             </div>
                         </div>
 
-                        <div className={cx('cart-btn')}>
+                        <div
+                            className={cx('cart-btn')}
+                            onClick={() => {
+                                handleClickCartBtn();
+                            }}
+                        >
                             <FontAwesomeIcon icon={faCartShopping} />
                             <span>Giỏ hàng</span>
                         </div>

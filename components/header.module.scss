@@ -61,6 +61,8 @@
     font-size: 1.3rem;
     justify-content: space-evenly;
     align-items: center;
+    cursor: pointer;
+    user-select: none;
 }
 .header-right {
     display: flex;

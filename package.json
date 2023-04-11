@@ -23,6 +23,7 @@
     "next": "13.3.0",
     "postcss": "8.4.21",
     "react": "18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-responsive-carousel": "^3.2.23",
     "sass": "^1.61.0",

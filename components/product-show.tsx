@@ -30,6 +30,8 @@ const ProductShow = () => {
                             src={item.link}
                             alt={item.title}
                             className={cx('img')}
+                            width={332}
+                            height={249}
                         />
                         <h2>{item.title}</h2>
                     </div>

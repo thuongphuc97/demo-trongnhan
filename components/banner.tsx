@@ -12,9 +12,7 @@ const Banner = () => {
         >
             <div>
                 <Image
-                    src={
-                        'https://proauto.vn/wp-content/uploads/2023/02/BANNER-WEB-CACH-AM-STP-21022023-01.png'
-                    }
+                    src={'/images/banner-am-thanh-xe-hoi-1-2048x560.jpg'}
                     alt='Phu'
                     height={380}
                     width={1390}
@@ -22,8 +20,10 @@ const Banner = () => {
             </div>
             <div>
                 <Image
-                    src='https://proauto.vn/wp-content/uploads/2022/09/banner-cach-am-xe-hoi-1.jpg'
+                    src='/images/banner-phu-ceramic-o-to.jpg'
                     alt='11'
+                    height={380}
+                    width={1390}
                 />
             </div>
         </Carousel>

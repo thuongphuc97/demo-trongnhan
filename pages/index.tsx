@@ -14,10 +14,6 @@ const Home = () => {
             <div className={`md:container md:mx-auto pt-10`}>
                 <Banner />
                 <ProductShow />
-                <ProductShow />
-                <ProductShow />
-                <ProductShow />
-                <ProductShow />
             </div>
         </RootLayout>
     );

@@ -2,7 +2,7 @@ import styles from '@/components/product-show.module.scss';
 import classNames from 'classnames/bind';
 import Link from 'next/link';
 const cx = classNames.bind(styles);
-
+import Image from 'next/image';
 const ProductShow = () => {
     return (
         <div className={cx('wrapper')}>
@@ -22,11 +22,13 @@ const ProductShow = () => {
             </div>
             <div className={cx('content')}>
                 {contents.map((item, index) => (
-                    <div className={cx('item')}>
-                        <img
+                    <div
+                        className={cx('item')}
+                        key={index}
+                    >
+                        <Image
                             src={item.link}
                             alt={item.title}
-                            key={index}
                             className={cx('img')}
                         />
                         <h2>{item.title}</h2>

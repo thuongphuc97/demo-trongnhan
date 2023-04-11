@@ -11,7 +11,7 @@ const Banner = () => {
             showThumbs={false}
         >
             <div>
-                <img
+                <Image
                     src={
                         'https://proauto.vn/wp-content/uploads/2023/02/BANNER-WEB-CACH-AM-STP-21022023-01.png'
                     }
@@ -21,7 +21,7 @@ const Banner = () => {
                 />
             </div>
             <div>
-                <img
+                <Image
                     src='https://proauto.vn/wp-content/uploads/2022/09/banner-cach-am-xe-hoi-1.jpg'
                     alt='11'
                 />

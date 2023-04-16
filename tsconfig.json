@@ -20,6 +20,7 @@
       "@/components": ["components/*"],
       "@/api": ["pages/api/*"],
       "@/pages": ["pages/*"],
+      "@/redux": ["redux/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

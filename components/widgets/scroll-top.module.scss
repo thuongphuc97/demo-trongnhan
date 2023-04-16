@@ -1,0 +1,21 @@
+@import '@/styles/_mixin';
+
+.wrapper {
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: rgba(143, 137, 137, 0.8);
+    height: 50px;
+    width: 50px;
+    border-top-left-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    @include mobile {
+        display: none;
+    }
+}
+.none {
+    display: none;
+}

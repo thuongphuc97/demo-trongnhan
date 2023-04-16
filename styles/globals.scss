@@ -10,9 +10,11 @@
     --primary-color: #ea9c23;
     --grey: #777;
     --white: #fff;
+    --black: #000;
 }
 html {
     font-size: 62%;
+    scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,16 +31,8 @@ input,
     border: none;
 }
 a[href] {
-    // color: var(--text-color);
     text-decoration: none;
 }
 main {
     scroll-behavior: smooth;
-    /* color: rgb(var(--foreground-rgb)); */
-    /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }

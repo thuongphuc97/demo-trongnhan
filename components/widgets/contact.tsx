@@ -7,7 +7,7 @@ import { MobileOnlyView, isMobile } from 'react-device-detect';
 const cx = classNames.bind(styles);
 
 const ContactWidget = () => {
-    const fbLink = 'https://www.facebook.com/sangtrongauto/';
+    const fbLink = 'http://m.me/fuc.ryu/';
     const zaloLink = 'https://zalo.me/0352427479';
     return (
         <div className={cx('wrapper')}>
@@ -18,7 +18,7 @@ const ContactWidget = () => {
                 <div className={cx('icon')}>
                     <FontAwesomeIcon icon={faZ} />
                 </div>
-                <span>Zalo</span>
+                <span className={cx('text')}>Zalo</span>
             </Link>
             <Link
                 className={cx('item')}
@@ -27,7 +27,7 @@ const ContactWidget = () => {
                 <div className={cx('icon')}>
                     <FontAwesomeIcon icon={faPhone} />
                 </div>
-                <span> Gọi ngay</span>
+                <span className={cx('text')}>Gọi ngay</span>
             </Link>
             <Link
                 className={cx('item')}
@@ -36,7 +36,7 @@ const ContactWidget = () => {
                 <div className={cx('icon')}>
                     <FontAwesomeIcon icon={faMessage} />
                 </div>
-                <span> Messenger</span>
+                <span className={cx('text')}>Messenger</span>
             </Link>
         </div>
     );

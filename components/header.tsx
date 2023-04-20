@@ -1,12 +1,13 @@
 'use client';
-import classNames from 'classnames/bind';
-import styles from './header.module.scss';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useAppDispatch, useAppSelector } from '@/redux/hook';
 import { handleOpenCart } from '@/redux/actions/app-action';
+import classNames from 'classnames/bind';
+import styles from './header.module.scss';
 const cx = classNames.bind(styles);
 
 const items = [

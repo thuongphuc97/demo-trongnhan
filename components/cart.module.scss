@@ -10,12 +10,12 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
     z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
 }
 .overlay-close {
     display: none; /* Hidden by default */
 }
 .transparent {
+    cursor: pointer; /* Add a pointer on hover */
     opacity: 0;
     height: 100%;
     width: 70%;
@@ -40,7 +40,30 @@
         border-bottom-left-radius: 25px;
     }
 }
-
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.close-button {
+    position: absolute;
+    left: 20px;
+    color: var(--grey);
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+}
 .title {
     font-size: 2.5rem;
     text-align: center;

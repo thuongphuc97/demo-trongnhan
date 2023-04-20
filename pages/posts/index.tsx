@@ -1,3 +1,4 @@
+import RootLayout from '@/components/layout';
 import axios from 'axios';
 import Link from 'next/link';
 
@@ -11,12 +12,9 @@ export async function getServerSideProps() {
 function index({ data }: any) {
     console.log('data', data);
     return (
-        <div>
-            {data.name}
-            <p>
-                <Link href={'/api/hello'}> Xin choa </Link>
-            </p>
-        </div>
+        <RootLayout>
+            <>Xin chao {data.name}</>
+        </RootLayout>
     );
 }
 

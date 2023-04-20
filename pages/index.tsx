@@ -11,11 +11,9 @@ const inter = Inter({ subsets: ['latin'] });
 const Home = () => {
     return (
         <RootLayout>
-            <div className={`md:container md:mx-auto pt-10`}>
-                <Banner />
-                <MobileNav />
-                <ProductShow />
-            </div>
+            <Banner />
+            <MobileNav />
+            <ProductShow />
         </RootLayout>
     );
 };

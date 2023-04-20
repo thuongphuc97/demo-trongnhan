@@ -3,6 +3,8 @@ import { useAppSelector, useAppDispatch } from '@/redux/hook';
 import styles from './cart.module.scss';
 import classNames from 'classnames/bind';
 import { handleOpenCart } from '@/redux/actions/app-action';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClose } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles);
 
 interface CartProps {
@@ -24,7 +26,18 @@ const Cart = () => {
                 className={cx('transparent')}
             />
             <div className={cx('wrapper')}>
-                <h1 className={cx('title')}>Giỏ hàng</h1>
+                <div className={cx('row')}>
+                    <div
+                        className={cx('close-button')}
+                        onClick={() => handleClickCartBtn()}
+                    >
+                        <FontAwesomeIcon
+                            icon={faClose}
+                            fontSize={30}
+                        />
+                    </div>
+                    <h1 className={cx('title')}>Giỏ hàng</h1>
+                </div>
             </div>
         </div>
     );
